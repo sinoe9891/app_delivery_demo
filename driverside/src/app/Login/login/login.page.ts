@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {Router} from '@angular/router';
 @Component({
   selector: 'app-login',
   templateUrl: './login.page.html',
@@ -8,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class LoginPage implements OnInit {
   title:string = 'Dobuler';
   imag:string;
-  constructor() { }
+  constructor(public router:Router) { }
 
   ngOnInit() {
     this.imag = '../../../assets/img/logo.JPG';
+  }
+  GoToPage(page){
+    this.router.navigate([page])
   }
 
 }

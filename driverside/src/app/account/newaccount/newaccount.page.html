@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>newaccount</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div style="text-align: center; margin: auto;">
+    <ion-img [src]="img" style="width: 150px; height: 90px; margin:auto; margin-top: 120px;"></ion-img> 
+    <br/>
+    <ion-label style="font-size: 35px; font-family:'Courier New', Courier, monospace;">{{title}}</ion-label>
+  <br/>
+  <br/>
+    <ion-icon name="person-outline"></ion-icon><ion-input placeholder="Username"></ion-input>
+    <ion-icon name="phone-portrait-outline"></ion-icon><ion-input Type="tel" placeholder="Phone"></ion-input>
+    <ion-icon name="key-outline"></ion-icon><ion-input placeholder="Password" Type="password"></ion-input>
+    <ion-icon name="key-outline"></ion-icon><ion-input placeholder="Confirm Password" Type="password"></ion-input>
+    <br/>
+    <br/>
+    <ion-button shape="round" color="element" style="width: 219px;">LOGIN</ion-button>
+    <br/>
+    <br/>
+    <ion-label>Already have account?</ion-label> <ion-router-link color="tertiary"  href="#">Login</ion-router-link>
+  </div>
+</ion-content>
