@@ -4,11 +4,14 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content color="fondo2">
   <div style="text-align: center;">
     <ion-img [src]="imagen" style="width: 150px; height: 90px; margin:auto; margin-top: 120px;"></ion-img>
     <ion-label style="font-size: 35px; font-family:'Courier New', Courier, monospace;">{{titulo}}</ion-label>
     <br/>
-    <ion-toggle slot="start" name="banana" color="warning" checked></ion-toggle>
+    <ion-button shape="round" (click)="GoToPage('signup')" style="width: 200px;">
+      Welcome  
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+    </ion-button>
   </div>
 </ion-content>
