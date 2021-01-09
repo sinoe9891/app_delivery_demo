@@ -21,7 +21,11 @@ const routes: Routes = [
   },
   {
     path: 'welcome',
-    loadChildren: () => import('./welcomedriver/welcome/welcome.module').then( m => m.WelcomePageModule)
+    loadChildren: () => import('./customerside/customerwelcome/welcome/welcome.module').then( m => m.WelcomePageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./Login/login/login.module').then( m => m.LoginPageModule)
   },
 ];
 
